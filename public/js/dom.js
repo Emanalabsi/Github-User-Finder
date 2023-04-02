@@ -1,3 +1,6 @@
+const searchBtn = document.querySelector(".search-btn");
+const nameInput = document.querySelector(".text-input");
+
 const renderUserCard = (res) => {
   // Create the elements
   const userCard = document.createElement("div");
@@ -40,3 +43,5 @@ const renderUserCard = (res) => {
 };
 
 const renderRepoCards = (res) => {};
+
+searchBtn.addEventListener("click", fetchUser);

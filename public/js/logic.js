@@ -1,6 +1,3 @@
-const searchBtn = document.querySelector(".search-btn");
-const nameInput = document.querySelector(".text-input");
-
 const fetchUser = () => {
   if (nameInput.value === "" || nameInput.value === null) {
     alert("please enter a valid input");
@@ -21,5 +18,3 @@ const fetchRepos = () => {
       throw new TypeError(err);
     });
 };
-
-searchBtn.addEventListener("click", fetchUser);
