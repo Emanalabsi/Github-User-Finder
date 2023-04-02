@@ -20,7 +20,7 @@ const getUser = (req, res) => {
 };
 
 const getRepos = (req, res) => {
-  fetchData(`https://api.github.com/users/${req.params.name}/repos/`).then(
+  fetchData(`https://api.github.com/users/${req.params.name}/repos`).then(
     (data) => res.send(data)
   );
 };
